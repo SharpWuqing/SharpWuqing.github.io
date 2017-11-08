@@ -5,16 +5,16 @@
   
   <title>javascript | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="javascript对象的深拷贝和浅拷贝">
+  <meta name="description" content="function objClone(source){       if(!source || typeof source!== &amp;apos;object&amp;apos;){           return source;       }       let newObj= source.constructor === Array?[]:{};       for(let key in source">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javascript">
 <meta property="og:url" content="http://yoursite.com/2017/09/29/blog1/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="javascript对象的深拷贝和浅拷贝">
-<meta property="og:updated_time" content="2017-11-08T08:10:28.064Z">
+<meta property="og:description" content="function objClone(source){       if(!source || typeof source!== &amp;apos;object&amp;apos;){           return source;       }       let newObj= source.constructor === Array?[]:{};       for(let key in source">
+<meta property="og:updated_time" content="2017-11-08T08:41:19.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript">
-<meta name="twitter:description" content="javascript对象的深拷贝和浅拷贝">
+<meta name="twitter:description" content="function objClone(source){       if(!source || typeof source!== &amp;apos;object&amp;apos;){           return source;       }       let newObj= source.constructor === Array?[]:{};       for(let key in source">
   
     <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -85,11 +85,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="javascript对象的深拷贝和浅拷贝"><a href="#javascript对象的深拷贝和浅拷贝" class="headerlink" title="javascript对象的深拷贝和浅拷贝"></a>javascript对象的深拷贝和浅拷贝</h1>
+        <hr>
+<pre><code>function objClone(source){
+      if(!source || typeof source!== &apos;object&apos;){
+          return source;
+      }
+      let newObj= source.constructor === Array?[]:{};
+      for(let key in source){
+           if(source.hasOwnProperty(key)){
+                 newObj[key]=source[key];
+           }
+      }
+      return newObj;
+   }
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/29/blog1/" data-id="cj9qrluui0001f082onrjep1h" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/09/29/blog1/" data-id="cj9qsq5070000w882bo4vdbz9" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -98,15 +111,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/09/29/w/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
-      <div class="article-nav-title">
-        
-          w
-        
-      </div>
-    </a>
   
+    <a href="/2017/09/29/w/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">w</div>
+    </a>
   
 </nav>
 
@@ -127,7 +136,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
     </div>
@@ -137,16 +146,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/09/29/w/">w</a>
+            <a href="/2017/09/29/blog1/">javascript</a>
           </li>
         
           <li>
-            <a href="/2017/09/29/blog1/">javascript</a>
+            <a href="/2017/09/29/w/">w</a>
           </li>
         
       </ul>
@@ -162,7 +171,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 SharpWuqing<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
