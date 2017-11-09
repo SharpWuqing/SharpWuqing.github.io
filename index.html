@@ -222,6 +222,7 @@
         },
     actions
 });
+
 5. Moudel not found:Error:Can&apos;t resolve &quot;style&quot; in &apos;D:\vue-demo&apos;
    在vue1.0中，在webpack.config.js中配置css文件时
     module:{
@@ -241,7 +242,9 @@
                 }
             ]
         }
+
 6.组件之间的通信从1.0过渡到2.0时引发的错误：
+
 vue1.0实现父子组件的通信 --&gt;通过props属性--&gt;并且子组件可以更改父组件的数据 通过sync同步
 当在vue2.0里面不允许直接给父级数据做更改,并且把这个方法.sync去掉了，
 当子组件再试图更改父组件的数据时，就会报错。
@@ -277,6 +280,7 @@ vue1.0实现父子组件的通信 --&gt;通过props属性--&gt;并且子组件�
          });
 
 9.element.ui表头点击事件
+
 使用element.ui之后 @click=&quot;&quot; 无法对表头等元素添加点击事件，正确的写法应该是@click.native=&quot;&quot;
 
 10.webpack2.0 插件的配置需要放到 plugins里面进行配置，不可放到rules里面进行配置
