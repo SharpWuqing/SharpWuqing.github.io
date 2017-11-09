@@ -78,11 +78,7 @@
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
 					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -119,11 +115,7 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
@@ -150,98 +142,6 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    <article id="http-w" class="article article-type-http  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/29/w/">http首部</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/29/w/" class="archive-article-date">
-  	<time datetime="2017-09-29T11:33:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在请求和响应报文中都可以用首部来提供信息,有些首部是某种报文专用的,有些则更通用一些.可以将首部分为五个主要的类型.</p>
-<ol>
-<li><p>通用首部</p>
-<p> 服务端和客户端都可以使用的通用首部</p>
-<p> <code></code></p>
-<pre><code>Date: Tue, 3, Otc 1974 02:16:00
-</code></pre><p> </p>
-</li>
-<li><p>请求首部</p>
-<p> 请求报文特有</p>
-<p> <code></code></p>
-<pre><code>Accept : */*
-</code></pre><p> </p>
-</li>
-<li><p>响应首部</p>
-<p> 响应报文的首部,以便为客户端提供信息.例如:</p>
-<p> <code></code></p>
-<pre><code>Server: Tiki-Hut/1.0
-</code></pre><p> </p>
-</li>
-<li><p>实体首部</p>
-<p> 实体首部指的是用于应对实体主体部分的首部。比如，可以用实体首部来说明实体主体部分的数据类型。例如，可以通过下列Content-Type首部告知应用程序，数据是以iso-latin-1字符集表示的HTML文档：</p>
-<p> <code></code></p>
-<pre><code>Content-Type:text/html; charset=iso-latin-1
-</code></pre><p> </p>
-</li>
-<li><p>扩展首部</p>
-<p> 扩展首部是非标准的首部,由应用程序开发者创建,但还未添加到已批准的HTTP规范中去.即使不知道这些扩展首部的含义，HTTP程序也要接受它们并对其进行转发</p>
-</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/29/w/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
     <article id="vue-blog1" class="article article-type-vue  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -422,6 +322,98 @@ vue1.0实现父子组件的通信 --&gt;通过props属性--&gt;并且子组件�
 
 
   
+    <article id="http-w" class="article article-type-http  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/29/w/">http首部</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/29/w/" class="archive-article-date">
+  	<time datetime="2017-09-29T11:33:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在请求和响应报文中都可以用首部来提供信息,有些首部是某种报文专用的,有些则更通用一些.可以将首部分为五个主要的类型.</p>
+<ol>
+<li><p>通用首部</p>
+<p> 服务端和客户端都可以使用的通用首部</p>
+<p> <code></code></p>
+<pre><code>Date: Tue, 3, Otc 1974 02:16:00
+</code></pre><p> </p>
+</li>
+<li><p>请求首部</p>
+<p> 请求报文特有</p>
+<p> <code></code></p>
+<pre><code>Accept : */*
+</code></pre><p> </p>
+</li>
+<li><p>响应首部</p>
+<p> 响应报文的首部,以便为客户端提供信息.例如:</p>
+<p> <code></code></p>
+<pre><code>Server: Tiki-Hut/1.0
+</code></pre><p> </p>
+</li>
+<li><p>实体首部</p>
+<p> 实体首部指的是用于应对实体主体部分的首部。比如，可以用实体首部来说明实体主体部分的数据类型。例如，可以通过下列Content-Type首部告知应用程序，数据是以iso-latin-1字符集表示的HTML文档：</p>
+<p> <code></code></p>
+<pre><code>Content-Type:text/html; charset=iso-latin-1
+</code></pre><p> </p>
+</li>
+<li><p>扩展首部</p>
+<p> 扩展首部是非标准的首部,由应用程序开发者创建,但还未添加到已批准的HTTP规范中去.即使不知道这些扩展首部的含义，HTTP程序也要接受它们并对其进行转发</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/29/w/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
@@ -563,27 +555,27 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="http://sharpwuqing.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
             </li>
           
         </ul>
@@ -594,7 +586,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">努力努力再努力</div>
   	  	
     	</section>
     
